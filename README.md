@@ -41,6 +41,7 @@ contracts/
 
 ```solidity
 addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
+```solidity
 
 ### 3. Book a Trip (as client)
 
