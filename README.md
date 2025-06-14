@@ -39,22 +39,27 @@ contracts/
 
 ### 2. Add a Trip (as provider)
 
-```solidity
+```bash
 addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
-```solidity
 
 ### 3. Book a Trip (as client)
 
+```bash
 bookTrip(tripId)  // send exactly the amount of ETH as the trip price
 
 ### 4. Complete Trip (as provider)
 
+```bash
 completeTrip(tripId);
 
 ### 5. Cancel a Trip (as client, before start date)
 
+```bash
+cancelTrip(tripId);
+
 ### 6. Withdraw Funds (as provider)
 
+```bash
 withdraw();
 
 ## 📜 Requirements
