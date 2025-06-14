@@ -8,9 +8,11 @@ The platform allows providers to register trips and clients to book them directl
 
 ## 📁 Project Structure
 
-contracts/
-├── TripManager.sol # Main smart contract handling trips and payments
-└── TripLibrary.sol # External library defining trip structure and logic
+   ```bash
+   contracts/
+   ├── TripManager.sol # Main smart contract handling trips and payments
+   └── TripLibrary.sol # External library defining trip structure and logic
+   ```
 
 
 ## ⚙️ Features
@@ -37,30 +39,30 @@ contracts/
 - Compile `TripLibrary.sol` first
 - Then compile and deploy `TripManager.sol`
 
-### 2. Add a Trip (as provider)
+2. Add a Trip (as provider)
 
-```bash
-addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
+   ```bash
+   addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
 
-### 3. Book a Trip (as client)
+3. Book a Trip (as client)
 
-```bash
-bookTrip(tripId)  // send exactly the amount of ETH as the trip price
+   ```bash
+   bookTrip(tripId)  // send exactly the amount of ETH as the trip price
 
-### 4. Complete Trip (as provider)
+4. Complete Trip (as provider)
 
-```bash
-completeTrip(tripId);
+   ```bash
+   completeTrip(tripId);
 
-### 5. Cancel a Trip (as client, before start date)
+5. Cancel a Trip (as client, before start date)
 
-```bash
-cancelTrip(tripId);
+   ```bash
+   cancelTrip(tripId);
 
-### 6. Withdraw Funds (as provider)
+6. Withdraw Funds (as provider)
 
-```bash
-withdraw();
+   ```bash
+   withdraw();
 
 ## 📜 Requirements
 Solidity ^0.8.17
