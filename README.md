@@ -55,7 +55,7 @@ contracts/
 5. Cancel a Trip (as client, before start date)
 
    ```solidity
-   
+   cancelTrip[tripId]
 
 7. Withdraw Funds (as provider)
 
