@@ -52,10 +52,10 @@ contracts/
    ```solidity
    completeTrip(tripId);
 
-5. Cancel a Trip (as client, before start date)
+5. Cancel a Trip (as client)
 
    ```solidity
-   cancelTrip[tripId]
+   cancelTrip(tripId);
 
 7. Withdraw Funds (as provider)
 
