@@ -31,30 +31,36 @@ contracts/
 
 ## 🧪 How to Use
 
-### 1. Deploy the Contracts
+1. Deploy the Contracts
 
 - Use [Remix IDE](https://remix.ethereum.org/)
 - Compile `TripLibrary.sol` first
 - Then compile and deploy `TripManager.sol`
 
-### 2. Add a Trip (as provider)
+2. Add a Trip (as provider)
 
-```solidity
-addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
+   ```solidity
+   addTrip("Eco Tour", "Iceland", 1735689600, 1736112000, 2 ether);
 
-### 3. Book a Trip (as client)
+3. Book a Trip (as client)
 
-bookTrip(tripId)  // send exactly the amount of ETH as the trip price
+   ```solidity
+   bookTrip(tripId)  // send exactly the amount of ETH as the trip price
 
-### 4. Complete Trip (as provider)
+4. Complete Trip (as provider)
 
-completeTrip(tripId);
+   ```solidity
+   completeTrip(tripId);
 
-### 5. Cancel a Trip (as client, before start date)
+5. Cancel a Trip (as client, before start date)
 
-### 6. Withdraw Funds (as provider)
+   ```solidity
+   
 
-withdraw();
+7. Withdraw Funds (as provider)
+
+   ```solidity
+   withdraw();
 
 ## 📜 Requirements
 Solidity ^0.8.17
@@ -73,7 +79,7 @@ TripCancelled(tripId, client, amount)
 FundsWithdrawn(provider, amount)
 
 ## ✍️ Author
-Developed by [Your Name]
+Developed by Stefano Benedet
 For educational and portfolio purposes.
 
 Feel free to fork, contribute, or get inspired for your own decentralized travel projects.
